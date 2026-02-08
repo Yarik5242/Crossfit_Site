@@ -294,7 +294,9 @@ letter-spacing: 0.05em;
 color: #c4c4c4
 }
 
-/* ---------------------------------------------------Верстка-------------- */
+/* ---------------------------------------------------ОБЩИЕ ПАРАМЕТРЫ-------------- */
+/* ---------------------------------------------------ОБЩИЕ ПАРАМЕТРЫ-------------- */
+/* ---------------------------------------------------ОБЩИЕ ПАРАМЕТРЫ-------------- */
 
 body {
   font-family: var(--second-family);
@@ -356,6 +358,15 @@ a:hover{
 .button:hover{
   background-color: var(--gray-500);
 }
+
+
+/* ---------------------------------------------------ВЕРСТКА-------------- */
+/* ---------------------------------------------------ВЕРСТКА-------------- */
+/* ---------------------------------------------------ВЕРСТКА-------------- */
+
+/* ---------------------------------------------------HEADER-------------- */
+/* ---------------------------------------------------HEADER-------------- */
+/* ---------------------------------------------------HEADER-------------- */
 
 .header {
   display: flex;
@@ -442,7 +453,9 @@ a:hover{
 }
 
 
-/* --------------------Banner main */
+/* ---------------------------------------------------ВANNER-------------- */
+/* ---------------------------------------------------ВANNER-------------- */
+/* ---------------------------------------------------ВANNER-------------- */
 
 .banner{
   padding: 36px 70px;
@@ -538,7 +551,9 @@ a:hover{
 
 
 
-/* ---------------------------Motivation */
+/* ---------------------------------------------------MOTIVATION-------------- */
+/* ---------------------------------------------------MOTIVATION-------------- */
+/* ---------------------------------------------------MOTIVATION-------------- */
 
 .motivation-item:nth-child(even){
   background-color: #131619;
@@ -634,7 +649,9 @@ a:hover{
   
 }
 
-
+/* ---------------------------------------------------TRAINING-------------- */
+/* ---------------------------------------------------TRAINING-------------- */
+/* ---------------------------------------------------TRAINING-------------- */
 
 .training-types{
   position: relative;
@@ -670,6 +687,10 @@ a:hover{
   letter-spacing: 0.05em;
   color: white;
 }
+
+/* ---------------------------------------------------JOIN-US-------------- */
+/* ---------------------------------------------------JOIN-US-------------- */
+/* ---------------------------------------------------JOIN-US-------------- */
 
   .join-us{
     background-color: #131619;
@@ -769,6 +790,10 @@ a:hover{
   row-gap: 7px;
 }
 
+.join-us-form-subtitle{
+  margin-top: 2vh;
+}
+
  .join-us-form-body{
   display: flex;
   align-items: center;
@@ -824,6 +849,10 @@ margin-bottom: 4vw;
   
 }
 
+/* ---------------------------------------------------LOCATION-------------- */
+/* ---------------------------------------------------LOCATION-------------- */
+/* ---------------------------------------------------LOCATION-------------- */
+
 
 .location-body{
   display: flex;
@@ -875,29 +904,110 @@ margin-bottom: 4vw;
 
 .location-subtitle {
     font-weight: 300;
-    font-size: 0.83em;
-    line-height: 175%;
-    letter-spacing: 0.05em;
+  font-size: 2vh;
+  line-height: 165%;
+  text-transform: uppercase;
+  text-align: center;
     color: #c4c4c4;
     margin-bottom: 3.8vh;
 }
 
 .location-title{
-  margin-bottom: 3.5vh;
+  margin-bottom: 2vh;
+}
+
+/* ---------------------------------------------------FAMILY-------------- */
+/* ---------------------------------------------------FAMILY-------------- */
+/* ---------------------------------------------------FAMILY-------------- */
+
+.family-title.backdrop-title::after {
+    content: attr(data-title);
+}
+
+.family-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+
+  
+}
+
+.family-subtitle{
+  margin-top: 2vh;
+  font-weight: 300;
+  font-size: 2vh;
+  line-height: 165%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c4c4c4;
+  margin-bottom: 7vh;
+}
+
+.family-title {
+  font-weight: 700;
+  font-size: clamp(32px, 6vw, 60px);
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+/* --------------SWIPER---------------- */
+/* --------------SWIPER---------------- */
+/* --------------SWIPER---------------- */
+
+.swiper-slide {
+  width: auto;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+/* маленькие */
+.slidex {
+  width: 400px;
+}
+
+/* большой слайд */
+.slide2 {
+  width: 70vw;
+  max-width: 900px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.x{
+  margin-top: 200px;
 }
 
 
-
-/* -------------MEDIA */
+/* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
+/* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
+/* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
+/* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
+/* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
 
 @media(max-width:1500px){
+
+
   .motivation-card-img{
     margin-block: -20px;
   }
 
+/* ---------------------------------------------------- */
+
   .training-types-list{
      grid-template-columns: repeat(3, 1fr);
   }
+
+/* ---------------------------------------------------- */
 
   .join-us-input{
   padding: 15px 25px;
@@ -948,15 +1058,21 @@ margin-bottom: 4vw;
     order: 2;
   }
 
+/* ---------------------------------------------------- */
+
   .banner{
     padding: 15px;
   }
+
+/* ---------------------------------------------------- */
 
   .motivation-card-img{
     width: 30%;
     height: auto;
     margin-block: 0;
   }
+
+/* ---------------------------------------------------- */
 
   .join-us-input{
   padding: 15px 25px;
@@ -992,9 +1108,13 @@ margin-bottom: 4vw;
     padding-block: 30px;
   }
 
+/* ---------------------------------------------------- */
+
    .training-types-list{
      grid-template-columns: repeat(2, 1fr);
   }
+
+/* ---------------------------------------------------- */
 
   .join-us-input{
   padding: 15px 25px;
@@ -1022,6 +1142,8 @@ margin-bottom: 4vw;
      grid-template-columns: repeat(1, 1fr);
   }
 
+/* ---------------------------------------------------- */
+
   .join-us-title{
     margin-bottom: 45px;
   }
@@ -1041,22 +1163,25 @@ margin-bottom: 4vw;
     column-gap: 15px;
   }
   
-  .button{
-    
-  }
+  
 
   .header{
     padding: 0 10px ;
   }
 
+/* ---------------------------------------------------- */
+
   .banner-info{
     margin-bottom: 5px;
   }
+
+/* ---------------------------------------------------- */
 
   .motivation-card-img{
     width: 60%;
   }
   
+/* ---------------------------------------------------- */
 
   .training-types-list{
     gap: 3em;
@@ -1067,6 +1192,8 @@ margin-bottom: 4vw;
     padding-top: 50px;
     padding-bottom: 100px;
   }
+
+/* ---------------------------------------------------- */
 
   .join-us-play{
     width: 90px;

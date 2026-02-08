@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kropp Fitness</title>
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
   <header class="header">
@@ -174,7 +178,40 @@
       </div>
 
     </section>
-  </main>
+    <section class="family">
+      <div class="family-header">
+        <h3 class="family-title centered  backdrop-title titel-medium" data-title="PART">be a part of our fit family</h3>
+        <div class="family-subtitle">Training helps you think and feel better. join us!</div>
+      </div>
+    </section>
 
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slidex"><img src="images/family/1.png" alt=""></div>
+        <div class="swiper-slide slide2"><img src="images/family/2.png" alt=""></div>
+        <div class="swiper-slide slidex"><img src="images/family/3.png" alt=""></div>
+        <div class="swiper-slide slidex"><img src="images/family/4.png" alt=""></div>
+        <div class="swiper-slide slidex"><img src="images/family/1.png" alt=""></div>
+        <div class="swiper-slide slidex"><img src="images/family/2.png" alt=""></div> 
+      </div>
+    </div>
+
+    <div class="x"><p>13213123</p></div>
+
+
+    
+    
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      loopedSlides: 6,          // ← важно
+      watchSlidesProgress: true
+    });
+  </script>
 </body>
 </html>
