@@ -453,6 +453,16 @@ a:hover{
 }
 
 
+.input {
+  border: 1px solid #404040;
+  border-radius: 30px;
+  padding: 15px 25px;
+  width: 40vh;
+  height: 2.4vh;
+  background: transparent;
+  transition: all .3s;
+}
+
 /* ---------------------------------------------------ВANNER-------------- */
 /* ---------------------------------------------------ВANNER-------------- */
 /* ---------------------------------------------------ВANNER-------------- */
@@ -589,8 +599,8 @@ a:hover{
   content: '';
   display: block;
   position: absolute;
-  right: 85%;
-  top: 5%;
+  right: 102%;
+  top: 1%;
   width: 26px;
   aspect-ratio: 1;
   background-image: url('icons/+.svg');
@@ -642,6 +652,14 @@ a:hover{
   height: 54px;
 }
 
+
+.motivation-card-description{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: #c4c4c4;
+}
 
 .button.transparent:hover{
   background-color: var(--color-light-gray);
@@ -824,7 +842,15 @@ text-align: center;
 margin-bottom: 4vw;
 }
 
-
+.join-us-form-header-title.backdrop-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 87%;
+    top: 1%;
+    width: 26px;
+    aspect-ratio: 1;
+}
 
 .join-us-input{
   border: 1px solid #404040;
@@ -869,7 +895,7 @@ margin-bottom: 4vw;
 
 .location-title{
   font-weight: 700;
-  font-size: clamp(32px, 6vw, 60px );
+  font-size: clamp(26px, 4vw, 40px );
   line-height: 120%;
   text-transform: uppercase;
   text-align: center;
@@ -880,11 +906,11 @@ margin-bottom: 4vw;
 
 
 .location-title.backdrop-title::before {
-  content: '';
+    content: '';
     display: block;
     position: absolute;
     right: 102%;
-    top: 15%;
+    top: 1%;
     width: 26px;
     aspect-ratio: 1;
 }
@@ -903,13 +929,14 @@ margin-bottom: 4vw;
 }
 
 .location-subtitle {
-    font-weight: 300;
-  font-size: 2vh;
+  font-weight: 300;
+  font-size: 1.6vh;
   line-height: 165%;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
-    color: #c4c4c4;
-    margin-bottom: 3.8vh;
+  color: #c4c4c4;
+  margin-bottom: 3.8vh;
+  max-width: 490px;
 }
 
 .location-title{
@@ -919,6 +946,10 @@ margin-bottom: 4vw;
 /* ---------------------------------------------------FAMILY-------------- */
 /* ---------------------------------------------------FAMILY-------------- */
 /* ---------------------------------------------------FAMILY-------------- */
+
+.family{
+  background-color: #131619;
+}
 
 .family-title.backdrop-title::after {
     content: attr(data-title);
@@ -983,11 +1014,121 @@ margin-bottom: 4vw;
   display: block;
 }
 
-.x{
+.family-title.backdrop-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 101%;
+    top: 1%;
+    width: 26px;
+    aspect-ratio: 1;
+}
+
+/* --------------CALCULATE---------------- */
+/* --------------CALCULATE---------------- */
+/* --------------CALCULATE---------------- */
+
+
+.calculate-inner {
   margin-top: 200px;
 }
 
+.calculate-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: white;
+}
 
+.calculate-subtitle {
+  font-weight: 300;
+  font-size: 1.6vh;
+  line-height: 165%;
+  /* text-transform: uppercase; */
+  /* text-align: center; */
+  color: #c4c4c4;
+  margin-top: 1.5vh;
+}
+
+.calculate-title.backdrop-title::after {
+    content: attr(data-title);
+}
+
+.calculate-title.backdrop-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 101%;
+    top: 1%;
+    width: 26px;
+    aspect-ratio: 1;
+}
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+.calculate-input-option{
+  color: #868686;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.05em;
+  height: 5.5vh;
+  width: 45vh;
+}
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+.calculate-input{
+  margin-bottom: 2vh;
+  margin-right: 3vh;
+}
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+.calculate-input:last-child{
+  margin-bottom: 2.5vh;
+}
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+.calculate-input-factor{
+  color: #868686;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.05em;
+  height: 5.5vh;
+  width: 93vh;
+}
+
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+
+.calculate-input-option option {
+  color: #fff; /* обычный цвет */
+}
+
+.calculate-form{
+  margin-top: 3.5vh;
+}
+
+.calculate-inner{
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.calculate-table-wrapper{
+  display: inline-block;
+}
+
+
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
+/* ДОРАБОТАТЬ ИНПУТЫ */
 /* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
 /* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
 /* -------------MEDIA *//* -------------MEDIA *//* -------------MEDIA */
@@ -1134,6 +1275,12 @@ margin-bottom: 4vw;
   
   .join-us-form-button{
     margin-top: 10px;
+  }
+
+  /* ---------------- */
+
+  .family-header{
+    margin-top: 1vh;
   }
 }
 
