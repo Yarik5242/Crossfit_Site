@@ -205,24 +205,26 @@
           </div>
           <form  class="calculate-form">
             <div class="calculate-form-body">
-              <label for="height" class="visually-hidden"></label>
-              <input id="height" class="calculate-input input" placeholder="Height / cm" type="number">
-              
-              <label class="visually-hidden" for="weight" ></label>
-              <input id="weight" class="calculate-input input" placeholder="Weight / kg" type="text">
-              
-              <label for="age" class="visually-hidden" ></label>
-              <input id="age" class="calculate-input input" placeholder="Age" type="text">
-              
-              <label for="gender" class="visually-hidden"></label>
-              <select  name="" id="gender" class="calculate-input input calculate-input-option">
-                <option value="" disabled selected>Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
+              <div class="calculate-form-grid">
+                  <label for="height" class="visually-hidden"></label>
+                  <input id="height" class="calculate-input input" placeholder="Height / cm" type="number">
+                
+                  <label class="visually-hidden" for="weight" ></label>
+                  <input id="weight" class="calculate-input input" placeholder="Weight / kg" type="text">
+                
+                  <label for="age" class="visually-hidden" ></label>
+                  <input id="age" class="calculate-input input" placeholder="Age" type="text">
+                  
+                  <label for="gender" class="visually-hidden"></label>
+                  <select  name="" id="gender" class="calculate-input input calculate-input-option calculatex" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+              </div>
 
               <label for="factor" class="visually-hidden"></label>
-              <select  name="" id="factor" class="calculate-input input calculate-input-factor">
+              <select  name="" id="factor" class="calculate-input input calculate-input-factor calculatey" required>
                 <option value="" disabled selected>Select an activity factor:</option>
                 <option value="male">1</option>
                 <option value="female">2</option>
@@ -267,6 +269,119 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer-inner container">
+        <div class="footer-inner-top">
+          <a class="footer__logo" href="/">
+            <img 
+              class="footer__logo-img" 
+              src="images/header-logo-kropp.png.png" 
+              alt="Kropp-logo"  loading="lazy" >
+          </a>
+          <p class="footer-subtitle">
+            please feel free to send us an e-mail 
+            at kropp@qodeinteractive.com For any additional inquiries
+          </p>
+        </div>
+        <div class="footer-inner-body">
+          <ul class="footer-lists">
+            <li class="footer-lists-item">
+              <div class="footer-item-title">ABOUT</div>
+              <div class="footer-item-subtitle">
+                Shape up your site with Kropp, <br>
+                a theme especially made for <br>
+                fitness & gym websites.
+              </div>
+            </li>
+            <li class="footer-lists-item item-top-top">
+              <div class="footer-item-title">WORKING HOURS</div>
+              <div class="footer-item-subtitle">
+                <p class="footer-item-subtitle1">
+                  Monday - Friday <br> 
+                  05:30 - 24:00 <br>
+                </p>
+                <p class="footer-item-subtitle2">
+                  Weekdays <br> 
+                  00:30 - 24:00 <br>
+                </p>
+
+              </div>
+            </li>
+            <li class="footer-lists-item item-top">
+              <div class="footer-item-title">LOCATION</div>
+              <div class="footer-item-subtitle">
+                <p class="footer-item-subtitle1">
+                  68 Jay Street, Brooklyn, <br>
+                  NY 11201, United States
+                </p>
+                <p class="footer-item-subtitle2 sub3">
+                  kropp@qodeinteractive.com <br> 
+                  + (1) 718 - 407 - 6400 <br>
+                </p>
+              </div>
+            </li>
+            <li class="footer-lists-item item-top">
+              <div class="footer-item-title has-arrow">START NOW</div>
+              <div class="footer-item-subtitle">
+                <!-- <a href="" class="footer-form-button button transparent">Email</a> -->
+                <form  class="footer-input">
+                  <label for="footer-email"></label>
+                  <input class="footer-input-input input" type="email" placeholder="Email" id="footer-email">
+                  <button class="footer-button" type="submit"></button>
+                </form>
+                <div class="footer-socials">
+                  <ul class="footer-socials-list">
+                     <li class="footer-socials-item ">
+                      <a href="" class="footer-socials-item-link" target="_blank">
+                        <img src="images/socials/1.svg" alt="" class="socials-img">
+
+                      </a>
+                    </li>
+                     <li class="footer-socials-item">
+                      <a href="" class="footer-socials-item-link" target="_blank">
+                        <img src="images/socials/2.svg" alt="" class="socials-img">
+
+                      </a>
+                    </li>
+                     <li class="footer-socials-item">
+                      <a href="" class="footer-socials-item-link" target="_blank">
+                        <img src="images/socials/3.svg" alt="" class="socials-img">
+
+                      </a>
+                    </li>
+                     <li class="footer-socials-item">
+                      <a href="" class="footer-socials-item-link" target="_blank">
+                        <img src="images/socials/4.svg" alt="" class="socials-img">
+
+                      </a>
+                    </li>
+                     <li class="footer-socials-item">
+                      <a href="" class="footer-socials-item-link" target="_blank">
+                        <img src="images/socials/5.svg" alt="" class="socials-img">
+
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-inner-footer">
+          <p class="footer-inner-footer-subtitle">
+            © 2022 Qode Interactive, All Rights Reserved | Privacy Policy | Contact Us
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-background">
+
+      </div>
+
+      
+    </footer>
 
     
 
