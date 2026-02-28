@@ -456,7 +456,7 @@ a:hover{
 .input {
   border: 1px solid #404040;
   border-radius: 30px;
-  padding: 15px 25px;
+  padding: 15px 15px;
   width: 40vh;
   height: 2.4vh;
   background: transparent;
@@ -1052,6 +1052,7 @@ margin-bottom: 4vw;
 .calculate-form-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  У ИНПУТА УБРАТЬ И ТУТ ГЭП
   /* gap: 20px; */
   /* width: 100%; */
 }
@@ -1110,8 +1111,9 @@ margin-bottom: 4vw;
 /* ДОРАБОТАТЬ ИНПУТЫ */
 .calculate-input{
   margin-bottom: 2vh;
-  margin-right: 3vh;
+  margin-right: 5vh; 
   color: white;
+  width: 25.5vh;
 }
 /* ДОРАБОТАТЬ ИНПУТЫ */
 /* ДОРАБОТАТЬ ИНПУТЫ */
@@ -1129,15 +1131,13 @@ margin-bottom: 4vw;
   line-height: 188%;
   letter-spacing: 0.05em;
   height: 5.5vh;
-  width: 93vh;
+  width: 96vh;
 }
 
-.calculate-input {
-  width: 24vh;
-}
+
 
 .calculatex{
-  width: 29vh;
+  width: 28.5vh;
 }
 
 .calculatey {
