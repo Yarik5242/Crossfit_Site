@@ -304,6 +304,7 @@ body {
   color: var(--color-light-gray) ;
   font-size: 16px;
   line-height: 1.75;
+  
 }
 
 .container {
@@ -1384,7 +1385,7 @@ select.input {
 .footer-button {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   aspect-ratio: 1;
   height: 100%;
   background: transparent;
@@ -1575,7 +1576,10 @@ select.input {
     flex-direction: column;
 
   } 
-
+.calculate-table-wrapper::before {
+  display: ;
+  width: 330px;
+}
 }
 
 @media(max-width: 767px){
@@ -1640,9 +1644,25 @@ select.input {
   .footer-subtitle {
     width: 400px;
   }
+
+  /* --------------- */
+
+  .footer-input-input {
+    width: 203px;
+  }
+
+.footer-button {
+  right: 67px;
+}
+
+.footer-inner  {
+  padding-left: 15px;
+}
 }
 
 @media(max-width:600px) {
+
+  /* ----- */
    .training-types-list{
      grid-template-columns: repeat(1, 1fr);
   }
@@ -1670,20 +1690,36 @@ select.input {
   border-radius: 50%;
   z-index: -1;
 }
+/* -------- */
+
+.footer-input-input {
+  width: 203px;
+}
+
+.footer-button {
+  right: 67px;
+}
 
 }
 
 @media(max-width: 477px) {
+
+  .header__logo {
+    padding-top: 15px;
+  }
+
   .header__list{
     height: 42px;
   }
 
   .header__lists{
     column-gap: 30px;
+    /* padding-top: 20px; */
   }
 
   .header__buttons{
     column-gap: 15px;
+    padding-top: 15px;
   }
   
   
