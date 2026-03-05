@@ -2,7 +2,7 @@ const http = require('http');
 const path = require('node:path');
 const fs = require('node:fs/promises');
 
-const PORT = 3000;
+// const PORT = 3000;
 
 const server = http.createServer(async(requerst, response) => {
   
@@ -101,6 +101,7 @@ try {
 } 
 });
 
-server.listen(PORT);
-
-console.log(`Сервер успешно запущен: http://localhost:${PORT} `)
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Сервер запущен ${PORT}`);
+});
